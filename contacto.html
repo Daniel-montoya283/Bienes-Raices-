@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Contacto</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+</head>
+<body>
+
+   <header class="site-header"> 
+       <div class="contenido-header">
+            <div class="barra-n">
+                <a href="index.html"><img src="img/logo.svg"></a>
+            
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="anuncios.html">Anucios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>   
+        </div>
+
+   </header>
+   <h1 class="titulo-nosotros">Contacto</h1>
+   <img src="img/destacada3.jpg" alt="">
+    <main class="contenedor  seccion">
+        <h2 class="fw-300 centrar-texto">Llena el formulario de contacto</h2>
+
+           <!-- formulario -->
+
+        <form action="" class="formulario">
+            <!-- siempre el formulario deve de ir en un form-->
+            <fieldset>    <!-- fieldset es para agrupar cosas que estan relacionadas-->
+                <legend>Informacion Personal</legend>   <!--legend es un titulo que se pone en la linea del margen para definir que que es ese campó-->
+                
+                <label for="nombre">Nombre:</label>
+                <!-- el for sirve para luego uno poner un id a otra etiqueta y que este se active -->
+                <!-- el label sirve para uno poner que va a ir en el siguiente campo, cada input debe ir con un label-->
+                <input type="text" id="nombre" placeholder="Pon tu Nombre">
+                <!-- placeholder sirve para que en el cuadro este alguna frase -->
+        
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" placeholder="tu correo electronico" required>
+                <!--required es muy importante porque hace que este campo sea obligatorio-->
+        
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" placeholder="tu telefono celular" required>
+        
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje"></textarea>
+        
+        
+                <!-- <input type="submit"> -->
+        
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre propiedad</legend>
+
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones">
+                    <option value="" disabled selected>--Seleccione--</option>
+                    <option value="" required>Compra</option>
+                    <option value="" required>Vende</option>
+                </select>
+
+                <label for="cantidad">Cantidad:</label>
+                <input type="number" id="cantidad" min="0" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+
+                <p>¿Como desea ser Contactado?</p>
+
+                <label for="C-telefono"> Por Telefono</label>
+                <input type="radio" id="C-telefono" name="contacto" value="telefono" required>
+
+                <label for="C-email">Por Correo</label>
+                <input type="radio" name="contacto" value="correo" required>
+
+                <p>En caso de haber elegido Telefono ¿como desea ser Contactado?</p>
+
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" required>
+
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" min="09:00" max="18:00" required>
+            </fieldset>
+            
+            <input type="submit" value="Enviar" class="boton boton-verde">
+
+        </form>
+
+
+        
+
+
+    </main>
+   <footer>
+    
+    <div class="nav-footer">
+        <nav class="navegacion">
+            <a href="nosotros.html">Nosotros</a>
+            <a href="anuncios.html">Anucios</a>
+            <a href="blog.html">Blog</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </div>
+    
+    <p id="copyright">Todos los derechos Reservados 2021 &copy; <br> Daniel Montoya A. </p>
+
+ 
+</footer>
+
+</body>
+</html>
