@@ -1,7 +1,7 @@
 /* HEADER */
 
 .site-header.inicio {
-background: url(img/header.jpg);
+background: url(img/R4.jpg);
 /* vh sirve para que la imagen cubra el tamaño de mi pantalla, min para que minimo la imagen este a 600px, bacgroud-zise:cover obliga a la imagen a que se vea toda*/
 background-size: cover;
 background-position: center;
@@ -21,6 +21,10 @@ justify-content: space-between;
 padding-top: 3rem;
 align-items: center;
 }
+.barra a {
+width: 106px;
+}
+
 .barra-n {
     display: flex;
     background-color: #333333;
@@ -29,20 +33,34 @@ align-items: center;
     align-items: center;
 }
 
-.navegacion a {
-color: white;
+.navegacionH a {
+color: rgb(0, 0, 0);
 text-decoration: none;
-font-size: 1.8rem;
+font-size: 28px;
 margin-right: 2rem;
 }
 /*:hover  sirve para que cuando pases el mouse por el enlace cambie de color*/
-.navegacion a:hover {
+.navegacionH a:hover {
     color: darkcyan;
 }
 
-.navegacion a:last-of-type {
+.navegacionH a:last-of-type {
     margin: 0;
 }
+.navegacion a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 15px;
+    margin-right: 2rem;
+    }
+    /*:hover  sirve para que cuando pases el mouse por el enlace cambie de color*/
+    .navegacion a:hover {
+        color: darkcyan;
+    }
+    
+    .navegacion a:last-of-type {
+        margin: 0;
+    }
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -61,6 +79,8 @@ body {
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    font-family: 'Teko', sans-serif;
+  
 }
 
 .contenido-header h1 {
@@ -70,9 +90,8 @@ body {
     line-height:2;
 
 }
-
 h1 {
-font-size: 3.8rem;
+font-size: 7rem;
 }
 
 h2 {
@@ -80,7 +99,8 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-family: 'Edu TAS Beginner', cursive;
 }
 
 h4 {
@@ -195,12 +215,13 @@ background-color: #718100;
 /* Seccion de el contacto index*/
 
 .imagen-contacto {
-    background-image: url(img/encuentra.jpg);
+    background-image: url(img/742424de-5cb6-4e89-8957-44cfa4f55749_rw_1920.jpg);
     background-position: center center;
     background-size: cover;
     height: 40rem;
     display: flex;
     align-items: center;
+    margin-top: 4rem;
 }
 .contenido-contacto {
     flex: 0 0 95%;
@@ -231,6 +252,12 @@ background-color: #718100;
     flex-basis: 40%;
     padding-top: 2rem;
 }
+
+.imgIN {
+    max-width: 100%;
+    height: 201px;
+    width: 317px;
+}
 .entrada-blog .texto-entrada {
     flex-basis: calc(60% - 3rem);
 }
@@ -246,7 +273,7 @@ line-height: 1.4;
     display: block;
     width: 15rem;
     height: .5rem;
-    background-color: #71B100;
+    background-color: #2a51d1;
     margin-top: 10px;
     /*esto lo que hiso fue poner una linea verde*/
 }
@@ -255,7 +282,7 @@ line-height: 1.4;
 }
 .centrar-texto {
     text-align: center;
-    font-weight: 300;
+    font-weight: 100;
 }
 
 
@@ -287,6 +314,9 @@ line-height: 1.4;
     padding-left: 5rem;
     font-weight: 300;
 } 
+ul li {
+    font-size: 40px;
+}
 
 /*FOOTER*/
 
